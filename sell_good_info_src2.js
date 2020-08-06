@@ -33,5 +33,6 @@ var _ow = ReturnVal(url, '_ow');
 var _ids_shop = ReturnVal(url, '_ids_shop');
 url = url.toString();
 url = url.replace(/&/g, '|');
-document.writeln('<' + 'script src=//shop.digiseller.ru/my/sell_good_info.asp?charset=&idd=' + idd + '&agent=184741' + agent + '&searchstr=' + searchstr + '&np=' + np + '&view=' + view + '&codepage=' + codepage + '&currency=' + currency + '&_ow=0' + _ow + '&_ids_shop=' + _ids_shop + '&url=' + url + '>');
-document.writeln('<' + '/script' + '>');
+var test = '<' + 'script src=//shop.digiseller.ru/my/sell_good_info.asp?charset=&idd=' + idd + '&agent=184741' + agent + '&searchstr=' + searchstr + '&np=' + np + '&view=' + view + '&codepage=' + codepage + '&currency=' + currency + '&_ow=0' + _ow + '&_ids_shop=' + _ids_shop + '&url=' + url + '>';
+document.writeln(test);
+console.log(test)
