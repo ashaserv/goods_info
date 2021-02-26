@@ -30,6 +30,6 @@ var agent = ReturnVal(url, 'agent');
 var codepage = ReturnVal(url, 'codepage');
 var currency = ReturnVal(url, 'currency');
 url = url.toString();
-url = url.replace(//g, '|');
+url = url.replace(/&/g, '|');
 document.writeln('<' + 'script src=//shop.digiseller.ru/my/sell_good_info.asp?charset=&idd=' + idd + '&agent=184741&_ow=0' + agent + '&searchstr=' + searchstr + '&np=' + np + '&view=' + view + '&codepage=' + codepage + '&currency=' + currency + '&url=' + url + '>');
 document.writeln('<' + '/script' + '>');
